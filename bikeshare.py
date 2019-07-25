@@ -285,7 +285,7 @@ def user_stats(df):
     print('-'*40)
 
 def raw_data(df):
-    choice = input("Would you like to see raw data? [Y/n] : ")
+    choice = input("Would you like to see raw data or no?[Y/n] : ")
     choice = choice.upper()
 
     count = 0
