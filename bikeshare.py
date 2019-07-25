@@ -1,6 +1,5 @@
 import time
 import pandas as pd
-import numpy as np
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -72,7 +71,7 @@ def get_filters():
             break"""
 	"""  FIN """
 		
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Hello! Let\'s explore some US bikeshare data for chicago new_york_city washington!')
     city_found, month_found, day_found = False, False, False
 	
     while True:
@@ -291,7 +290,7 @@ def user_stats(df):
     print('-'*40)
 
 def raw_data(df):
-    choice = input("Would you like to see raw data? [Y/n] : ")
+    choice = input("Would you like to see raw data or no?[Y/n] : ")
     choice = choice.upper()
 
     count = 0
