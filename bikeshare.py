@@ -71,7 +71,7 @@ def get_filters():
             break"""
 	"""  FIN """
 		
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Hello! Let\'s explore some US bikeshare data for chicago new_york_city washington!')
     city_found, month_found, day_found = False, False, False
 	
     while True:
