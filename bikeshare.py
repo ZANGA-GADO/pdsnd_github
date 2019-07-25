@@ -76,18 +76,23 @@ def get_filters():
     city_found, month_found, day_found = False, False, False
 	
     while True:
+	#I simplified the code of the city
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-        if not city_found:
-            city = input("We have 3 cities available to explore : Chicago, Washington, New York City. Please choose "
-                         "one : ")
-            city = city.lower()
-            if city not in CITY_DATA:
-                print("Invalid city or data not available, please choose one of the 3 : Chicago, Washington, "
-                      "New York City")
-                continue
-            else:
-                city_found = True
-        print('\n')
+        city = input("Select a city from {}, {} or {}:".format(*CITY_DATA.keys())).strip().lower()
+        if city in CITY_DATA.keys():
+            break
+			
+		#if not city_found:
+           # city = input("We have 3 cities available to explore : Chicago, Washington, New York City. Please choose "
+               #          "one : ")
+            #city = city.lower()
+           # if city not in CITY_DATA:
+             #   print("Invalid city or data not available, please choose one of the 3 : Chicago, Washington, "
+                #      "New York City")
+               # continue
+            #else:
+              #  city_found = True
+       # print('\n')
 
     # TO DO: get user input for month (all, january, february, ... , june)
         if not month_found:
